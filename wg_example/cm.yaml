@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: wg-map
+  namespace: vpn
+data:
+  wg-map.yaml: |
+    servers:
+      - name: worker1
+        net: 10.13.10
+      - name: worker2
+        net: 10.13.11
+      - name: worker3
+        net: 10.13.12
+      - name: worker4.booksdump.com
+        net: 10.13.13
